@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link type="text/css" rel="stylesheet" href="UsoBasic.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+<title>Some Kind of Nostalism</title>
+
+<script>
+function compile(){
+	window.__gwt_bookmarklet_params = {'module_name':'usobasic','server_url':'http://localhost:9876/'}; 
+	var s = document.createElement('script');
+	s.src = 'http://localhost:9876/dev_mode_on.js'; 
+	document.getElementsByTagName('head')[0].appendChild(s);
+}
+</script>
+<script type="text/javascript" src="usobasic/usobasic.nocache.js"></script>
+<script type="text/usobasic">
+</script>
+<style type="text/css">
+#usobasic_root {
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+	top: 110px;
+	left: 130px;
+	z-index: 2;
+}
+
+#btn {
+	margin: 0px;
+	padding: 0px;
+	position: absolute;
+}
+</style>
+</head>
+
+<body>
+	<button id="btn" onclick="compile()"> compile</button>
+	<img src="display.jpg" width="1000px" height="920px" id="img" />
+	<div id="usobasic_root"></div>
+</body>
+</html>

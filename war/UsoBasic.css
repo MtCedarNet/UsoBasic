@@ -1,0 +1,82 @@
+@font-face {
+	font-family: ricty;
+	src: url("RictyDiminished-Regular.eot");
+}
+
+@font-face {
+	font-family: ricty;
+	src: url("RictyDiminished-Regular.ttf") format("truetype");
+}
+
+#usobasic_root {
+	width: 800px;
+	height: 500px;
+}
+
+.usobasic_text_screen {
+	margin: 0px;
+	padding: 0px;
+	font-family: ricty, monospace;
+	font-size: 16px;
+	line-height: 1em;
+	letter-spacing: 0px;
+	z-index: 50;
+	width: 700px;
+	height: 400px;
+	position: absolute;
+}
+
+.usobasic_graphic_screen {
+	position: absolute;
+	height: 400px;
+	width: 640px;
+}
+
+.usobasic_dummy_input {
+	position: absolute;
+	padding: 0px;
+	height: 1px;
+	width: 1px;
+	border:none;
+}
+
+.gwt-DialogBox {
+	z-index: 100;
+	background: #c0c0c0;
+}
+
+.gwt-DialogBox .Caption {
+	font-family: ricty;
+	filter: progid:DXImageTransform.Microsoft.gradient(GradientType=1,startColorstr='#ff000080', endColorstr='#ff0f84d0');
+	background: -moz-linear-gradient(left, #000080, #0f84d0);
+	background: -webkit-gradient(linear, left top, right top, from(#000080),
+		to(#0f84d0) );
+	color: #ffffff;
+	padding: 4px 8px 4px 4px;
+	cursor: default;
+	font-weight: bold;
+	border-bottom: 1px solid #bbbbbb;
+	border-top: 1px solid #D2D2D2;
+}
+
+.gwt-DialogBox .dialogMiddleCenter {
+	padding: 3px;
+}
+
+.gwt-DialogBox .gwt-Button {
+	margin-left: 10pt;
+}
+
+.gwt-DialogBox .gwt-Label {
+	margin-left: 10pt;
+}
+
+.gwt-DialogBox .gwt-TextArea {
+	font-family: ricty;
+	height: 400pt;
+	width: 320pt;
+}
+
+.gwt-DialogBox .gwt-TextBox {
+	width: 40pt;
+}

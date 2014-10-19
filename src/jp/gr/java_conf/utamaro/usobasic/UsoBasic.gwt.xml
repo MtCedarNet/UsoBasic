@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- When updating your version of GWT, you should also update this DTD reference, 
+	so that your app can take advantage of the latest GWT module capabilities. -->
+<!DOCTYPE module PUBLIC "-//Google Inc.//DTD Google Web Toolkit 2.6.0//EN"
+  "http://google-web-toolkit.googlecode.com/svn/tags/2.6.0/distro-source/core/src/gwt-module.dtd">
+<module rename-to='usobasic'>
+	<!-- Inherit the core Web Toolkit stuff. -->
+	<inherits name='com.google.gwt.user.User' />
+	<inherits name="com.google.gwt.logging.Logging" />
+	<inherits name="com.google.gwt.i18n.I18N" />
+
+	<set-property name="gwt.logging.popupHandler" value="DISABLED" />
+
+	<!-- Other module inherits -->
+
+	<!-- Specify the app entry point class. -->
+	<entry-point class='jp.gr.java_conf.utamaro.usobasic.client.UsoBasic' />
+
+	<!-- Specify the paths for translatable code -->
+	<source path='client' />
+
+	<!-- allow Super Dev Mode -->
+	<add-linker name="xsiframe" />
+	<set-configuration-property name="devModeUrlWhitelistRegexp"
+		value="http://(localhost|\w+\.\w+\.\w+\.\w+)(:\d+)?/(.|\.|/)*" />
+
+	<set-property name="canvasElementSupport" value="maybe">
+		<any>
+			<when-property-is name="user.agent" value="ie8" />
+		</any>
+	</set-property>
+	<replace-with class="com.google.gwt.dom.client.MyDOMImplIE8">
+		<when-type-is class="com.google.gwt.dom.client.DOMImpl" />
+		<when-property-is name="user.agent" value="ie8" />
+	</replace-with>
+</module>
