@@ -236,6 +236,7 @@ public class GraphicScreen {
 		}
 		if(color2==-1) color2=color1;
 
+		ctx.save();
 		ctx.beginPath();
 		if(ratio>1)	ctx.scale(1,ratio);
 		else ctx.scale(ratio,1);
@@ -250,6 +251,7 @@ public class GraphicScreen {
 			ctx.fill();
 		}
 		ctx.stroke();
+		ctx.restore();
 		lp.set(x,y);
 	}
 	public void preset(boolean isStep,int x,int y){
